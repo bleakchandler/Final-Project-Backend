@@ -1,7 +1,7 @@
 class CreateDays < ActiveRecord::Migration[6.1]
   def change
     create_table :days do |t|
-      t.datetime :date
+      t.string :date
       t.string :note
       t.belongs_to :user, null: false, foreign_key: true
 

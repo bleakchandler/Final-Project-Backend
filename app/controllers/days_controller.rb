@@ -1,12 +1,12 @@
 class DaysController < ApplicationController
         def index
             @days = Day.all
-            render json: @days
+            render json: Day.day_array_to_json(@days)
         end    
     
         def show
             @day = Day.find(params[:id])
-            render json: @day
+            render json: @day.to_json
         end    
     
     
@@ -37,7 +37,6 @@ class DaysController < ApplicationController
         private
     
         def day_params
-            params.require(:day).permit(:date, :note, :day_id)
+            params.require(:day).permit(:date, :note, :user_id)
         end
-    end
 end

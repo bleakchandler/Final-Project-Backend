@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(version: 2021_04_28_214844) do
   create_table "albums", force: :cascade do |t|
     t.string "title"
     t.string "artist"
+    t.string "album_art"
     t.integer "rating"
     t.string "comment"
     t.bigint "day_id", null: false
@@ -27,7 +28,7 @@ ActiveRecord::Schema.define(version: 2021_04_28_214844) do
   end
 
   create_table "days", force: :cascade do |t|
-    t.datetime "date"
+    t.string "date"
     t.string "note"
     t.bigint "user_id", null: false
     t.datetime "created_at", precision: 6, null: false

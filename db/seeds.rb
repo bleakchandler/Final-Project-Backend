@@ -11,8 +11,8 @@ user1 = User.create(name: Faker::Name.first_name, username: "hello", password: "
 user2 = User.create(name: Faker::Name.first_name, username: "test", password: "test")
 
 #Days
-day1 = Day.create(note: "Day 1", user_id: 1)
-day2 = Day.create(note: "Day 2", user_id: 2)
+day1 = Day.create(note: "Day 1", user_id: 2, date: "2021-04-02")
+day2 = Day.create(note: "Day 2", user_id: 1, date: "2021-06-02")
 
 # Albums
 album1 = Album.create(title: "The Fame Monster", artist: "Lady Gaga", rating: 5, comment: "Amazing album!", day_id: 1)
