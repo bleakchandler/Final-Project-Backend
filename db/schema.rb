@@ -19,6 +19,8 @@ ActiveRecord::Schema.define(version: 2021_04_28_214844) do
     t.string "title"
     t.string "artist"
     t.string "album_art"
+    t.string "spotify_link"
+    t.string "release_date"
     t.integer "rating"
     t.string "comment"
     t.bigint "day_id", null: false

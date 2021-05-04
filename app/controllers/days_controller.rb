@@ -19,7 +19,7 @@ class DaysController < ApplicationController
         def create
             @day = Day.create(day_params)
     
-            render json: @day
+            render json: @day.to_json
         end
     
         def destroy
