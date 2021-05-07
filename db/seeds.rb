@@ -11,14 +11,14 @@ user1 = User.create(name: Faker::Name.first_name, username: "hello", password: "
 user2 = User.create(name: Faker::Name.first_name, username: "test", password: "test")
 
 #Days
-day1 = Day.create(note: "Day 1", user_id: 1, date: "2021-05-28")
-day2 = Day.create(note: "Day 2", user_id: 1, date: "2021-05-16")
+day1 = Day.create(note: "Day 1", user_id: 1, date: "2021-04-28")
+day2 = Day.create(note: "Day 2", user_id: 1, date: "2021-04-16")
 
-day3 = Day.create(note: "Day 3", user_id: 1, date: "2021-05-03")
-day4 = Day.create(note: "Day 4", user_id: 1, date: "2021-05-12")
+day3 = Day.create(note: "Day 3", user_id: 1, date: "2021-04-03")
+day4 = Day.create(note: "Day 4", user_id: 1, date: "2021-04-12")
 
-day5 = Day.create(note: "Day 5", user_id: 1, date: "2021-05-31")
-day6 = Day.create(note: "Day 6", user_id: 1, date: "2021-05-08")
+day5 = Day.create(note: "Day 5", user_id: 1, date: "2021-05-01")
+day6 = Day.create(note: "Day 6", user_id: 1, date: "2021-05-03")
 
 # Albums
 album1 = Album.create(title: "The Fame Monster", artist: "Lady Gaga", rating: 5, comment: "Amazing album!", day_id: 1, album_art: 'https://upload.wikimedia.org/wikipedia/en/4/45/The_Fame_Monster.png', release_date: "2009", spotify_link: "https://open.spotify.com/album/6rePArBMb5nLWEaY9aQqL4?si=005e0478046e4618")
@@ -28,7 +28,7 @@ album3 = Album.create(title: "Number 1 Angel", artist: "Charli XCX", rating: 5, 
 
 album4 = Album.create(title: "4", artist: "Beyoncé", rating: 5, comment: "Incredible album!", day_id: 4, album_art: 'https://images-na.ssl-images-amazon.com/images/I/71uR2KhRrZL._SL1066_.jpg', release_date: "2011", spotify_link: "https://open.spotify.com/album/1gIC63gC3B7o7FfpPACZQJ?si=QefKrNYgTVehqZoZtgMIIg")
 
-album5 = Album.create(title: "OIL OF EVERY PEARL'S UN-INSIDES", artist: "SOPHIE", rating: 5, comment: "Amazing album!", day_id: 5, album_art: 'https://upload.wikimedia.org/wikipedia/en/d/d0/Sophie_-_Oil_of_Every_Pearl%27s_Un-Insides.png', release_date: "2019", spotify_link: "https://open.spotify.com/album/4z3YbEkKWwiIMSJTWUQbTH?si=isopF2uUStCf5xj3N4jw7w")
+album5 = Album.create(title: "OIL OF EVERY PEARL'S UN-INSIDES", artist: "SOPHIE", rating: 5, comment: "Amazing album!", day_id: 5, album_art: 'https://upload.wikimedia.org/wikipedia/en/d/d0/Sophie_-_Oil_of_Every_Pearl%27s_Un-Insides.png', release_date: "2018", spotify_link: "https://open.spotify.com/album/4z3YbEkKWwiIMSJTWUQbTH?si=isopF2uUStCf5xj3N4jw7w")
 
 album6 = Album.create(title: "Confessions on a Dancefloor", artist: "Madonna", rating: 5, comment: "Incredible album!", day_id: 6, album_art: 'https://images-na.ssl-images-amazon.com/images/I/71D5S3PHRmL._SL1425_.jpg', release_date: "2005", spotify_link: "https://open.spotify.com/album/1hg0pQJLE9dzfT1kgZtDPr?si=tb15CU0gRN6pMkY8GkAvig")
 
