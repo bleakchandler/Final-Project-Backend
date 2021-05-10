@@ -22,8 +22,8 @@ class SongsController < ApplicationController
     end
 
     def destroy
-        @song = Song.find(params[:id])  
-        @song.destroy
+        @songs = Song.all.where(album_id: params[:id]) 
+        @songs.destroy_all
     end
 
     def update

@@ -1,6 +1,8 @@
 class Day < ApplicationRecord
   belongs_to :user
   has_one :album
+  has_many :songs, through: :album
+
 
 def self.day_array_to_json(days)
   days.map do |day|
@@ -16,6 +18,7 @@ def to_json
       user_id: self.user_id,
       user: self.user,
       album: self.album,
+      songs: self.songs
   }
 end 
 end

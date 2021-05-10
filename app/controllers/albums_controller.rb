@@ -1,14 +1,13 @@
 class AlbumsController < ApplicationController
     def index
         @albums = Album.all
-        render json: @albums
+        render json: Album.album_array_to_json(@albums)
     end    
 
     def show
         @album = Album.find(params[:id])
-        render json: @album
+        render json: @album.to_json
     end    
-
 
     def new
         @album = Album.new
@@ -19,7 +18,7 @@ class AlbumsController < ApplicationController
     def create
         @album = Album.create(album_params)
 
-        render json: @album
+        render json: @album.to_json
     end
 
     def destroy
@@ -31,7 +30,7 @@ class AlbumsController < ApplicationController
         @album = Album.find(params[:id])
         @album.update(album_params)
 
-        render json: @album
+        render json: @album.to_json
     end
 
     private
